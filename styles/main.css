@@ -1,0 +1,23 @@
+:root {
+    --primary-color: rgb(58, 188, 188);
+}
+/*this is my theme color present in my lgo I have set this to a varuable: primary color. and I will be refrancing it throughoutr the code for ease of use*/
+
+table{
+    color: var(--primary-color);
+    background-color: var(--primary-color); width: 700px;
+}
+/*this is the text ant the outline of my table reciving my primary color*/ 
+th{
+    background-color: grey;
+}
+td{
+    background-color: lightgrey;
+}
+h1{
+    color: var(--primary-color);
+}
+h2, h3, h4 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
