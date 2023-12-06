@@ -21,9 +21,10 @@ h2, h3, h4 {
     font-size: 1.5rem;
     color: var(--primary-color);
 }
+/*this is where I integrate for diffrent screen sizes, I have demonstrated this by floating the images*/
 @media only screen and (min-width: 768px)
     {
-        body{
-            background:blue;
-        }
+        img {
+            float: right;
+          }
     }
