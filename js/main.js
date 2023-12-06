@@ -4,8 +4,10 @@ console.log(date);
 yearEl.textContent = date;
 
 // Access the button element
+let indicator = 1
 const button = document.getElementById('myButton');
+button.textContent = indicator
 // Add an event listener to change the button's text when clicked
 button.addEventListener('click', function() {
-button.textContent = 'Button Clicked';
+    button.textContent = indicator++
 });

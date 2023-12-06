@@ -1,6 +1,5 @@
 :root {
     --primary-color: rgb(58, 188, 188);
-    stylecolor(black)
 }
 /*this is my theme color present in my lgo I have set this to a varuable: primary color. and I will be refrancing it throughoutr the code for ease of use*/
 
@@ -22,3 +21,9 @@ h2, h3, h4 {
     font-size: 1.5rem;
     color: var(--primary-color);
 }
+@media only screen and (min-width: 768px)
+    {
+        body{
+            background:black;
+        }
+    }
