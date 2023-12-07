@@ -26,9 +26,3 @@ if (indicator % 2 === 0){
     mod = "odd";
 };
 document.getElementById("mod").innerText = mod;
-// For Loops
-const numbersList = document.getElementById('numbers');
- 
-for (let i = 1; i <= 100; i++) {
-  const listItem = document.createElement('li');
-  listItem.textContent = i % 2 === 0 ? 'even' : 'odd';
