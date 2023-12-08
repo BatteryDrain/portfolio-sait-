@@ -5,7 +5,7 @@ console.log(date);
 yearEl.textContent = date;
 
 // Access the button element
-let indicator = 0
+let indicator = 0;
 const button = document.getElementById('myButton');
 button.textContent = "click me!"
 //mouse over
@@ -14,15 +14,23 @@ button.addEventListener('mouseover', function(){
 });
 // Add an event listener to change the button's text when clicked
 button.addEventListener('click', function() {
-    button.textContent = "clicked "+indicator+++" times";
+    indicator++
+    if (indicator == 1){
+        button.textContent = "clicked "+indicator+" time";
+    }
+    else{
+        button.textContent = "clicked "+indicator+" times";
+    };
+    /* ternary operator
+    button.textContent = (indicator == 1) ? "clicked "+indicator+" time" : "clicked "+indicator+" times";*/
+    //calculate
+    let mod = "even";
+    if (indicator % 2 === 0){
+        mod = "odd";
+    };
+    document.getElementById("mod").innerText = mod;
 });
 //mouse leave
 button.addEventListener('mouseleave', function(){
     document.getElementById('myButton').innerText = "click me!";
 });
-//calculate
-let mod = "even"
-if (indicator % 2 === 0){
-    mod = "odd";
-};
-document.getElementById("mod").innerText = mod;
