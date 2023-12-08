@@ -34,3 +34,10 @@ button.addEventListener('click', function() {
 button.addEventListener('mouseleave', function(){
     document.getElementById('myButton').innerText = "click me!";
 });
+//for loop
+const list = document.getElementById('list');
+for (let i = 1; i <= 100; i = i + 1) {
+    let li = document.createElement("li");
+    li.textContent = (i % 2 == 0) ? "even" : "odd";
+    list.appendChild(li);
+  };
