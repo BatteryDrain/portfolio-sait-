@@ -24,9 +24,9 @@ button.addEventListener('click', function() {
     /* ternary operator
     button.textContent = (indicator == 1) ? "clicked "+indicator+" time" : "clicked "+indicator+" times";*/
     //calculate
-    let mod = "even";
+    let mod = "odd";
     if (indicator % 2 === 0){
-        mod = "odd";
+        mod = "even";
     };
     document.getElementById("mod").innerText = mod;
 });
