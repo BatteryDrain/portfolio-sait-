@@ -1,4 +1,4 @@
-alert("HELLOWORLD!");
+//alert("HELLOWORLD!");
 const yearEl = document.getElementById('year');
 const date = new Date().getFullYear();
 console.log(date);
